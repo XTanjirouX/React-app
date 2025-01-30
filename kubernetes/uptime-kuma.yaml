@@ -16,6 +16,7 @@ spec:
       containers:
         - name: uptime-kuma
           image: louislam/uptime-kuma:1
+        automountServiceAccountToken: false
           ports:
             - containerPort: 3001
           resources:
