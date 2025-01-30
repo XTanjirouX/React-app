@@ -15,10 +15,12 @@ spec:
     spec:
       imagePullSecrets:
         - name: acr-auth
+    spec:
       containers:
         - name: react-app
           image: leakplantingregistry.azurecr.io/react-app:latest
           imagePullPolicy: Always
+        automountServiceAccountToken: false
           ports:
             - containerPort: 3000
           resources:
