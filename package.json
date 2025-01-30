@@ -18,7 +18,7 @@
     "start:testenv": "cross-env REACT_APP_USE_EMULATORS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test-coverage": "react-scripts test --coverage",
+    "test-coverage": "cross-env CI=true react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
